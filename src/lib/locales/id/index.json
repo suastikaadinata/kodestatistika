@@ -1,0 +1,28 @@
+{
+    "services": {
+        "title": "Services",
+        "desc": "Services description",
+        "menu":[
+            {
+                "title": "Olah Data Statistika",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "icon": "mdi:graph-box-plus-outline"
+            },
+            {
+                "title": "Penulisan Karya Ilmiah",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "icon": "ph:pen-bold"
+            },
+            {
+                "title": "Pembuatan Website",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "icon": "fluent-mdl2:website"
+            },
+            {
+                "title": "Pembuatan Mobile Apps",
+                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "icon": "carbon:application-mobile"
+            }
+        ]
+    }
+}

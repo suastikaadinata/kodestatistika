@@ -1,10 +1,16 @@
 <script>
-  import "../app.postcss";
+
   import Icon from "@iconify/svelte";
-  import HeaderButton from "$components/HeaderButton.svelte";
+  import HeaderButton from "../lib/components/HeaderButton.svelte";
   import logo from "$assets/logo_kode_statistika.png";
   import mainIllust from "$assets/home_illust.png";
-  import CollapsibleContainer from "$components/CollapsibleContainer.svelte";
+  import CollapsibleContainer from "../lib/components/CollapsibleContainer.svelte";
+  import { t } from "$locales"
+
+  const services = [...new Array(4)].map((e, i) => ({
+    title: `home.services.menu.${i}.title`,
+    icon: `home.services.menu.${i}.icon`,
+  }));
 </script>
 
 <div>
@@ -59,7 +65,7 @@
       id="services"
       class="relative flex-none snap-end snap-always xl:flex bg-greenSoft bg-opacity-20"
     >
-      <div class="max-w-screen-2xl flex xl:px-16 xl:py-10 w-full">
+      <div class="max-w-screen-2xl xl:px-16 xl:py-10 w-full flex">
         <div>
           <div class="text-5xl font-bold text-accent">Services.</div>
           <div class="text-xl font-semibold text-blueDeepDark mt-4 w-[350px]">
@@ -127,8 +133,15 @@
         </div>
       </div>
     </div>
-    <div id="faq">
-      <CollapsibleContainer />
+    <div id="faq" class="m-20">
+      <div class="text-5xl font-bold w-full text-center mb-5">FaQ</div>
+      <div class="flex flex-col">
+        <CollapsibleContainer />
+        <CollapsibleContainer />
+        <CollapsibleContainer />
+        <CollapsibleContainer />
+        <CollapsibleContainer />
+      </div>
     </div>
   </main>
   <footer />

@@ -13,8 +13,9 @@ const config = {
 			strict: true
 		}),
 		alias: {
-			$components: 'src/components',
-			$assets: 'src/assets'
+			$components: 'src/lib/components',
+			$assets: 'src/lib/assets',
+			$locales: 'src/lib/locales',
 		}
 	}
 };
