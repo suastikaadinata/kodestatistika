@@ -1,4 +1,28 @@
 {
+    "top": {
+        "menu": [
+            { 
+                "title": "Beranda",
+                "link": "home"
+            },
+            { 
+                "title": "Tentang Kami",
+                "link": "about"
+            },
+            { 
+                "title": "Layanan",
+                "link": "services"
+            },
+            { 
+                "title": "FAQ",
+                "link": "faq"
+            },
+            { 
+                "title": "Hubungi Kami",
+                "link": "contact"
+            }
+        ]
+    },
     "services": {
         "title": "Services",
         "desc": "Services description",
