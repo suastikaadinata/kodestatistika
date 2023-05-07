@@ -68,10 +68,13 @@
         <div class="text-xl font-semibold text-blueDeepDark">Tentang Kami</div>
         <div class="text-3xl font-bold text-greenSoftDark">Kode Statistika</div>
         <div class="mt-4 text-xl text-blueDeepDark">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Kode Statistika adalah sebuah Software & Statistic House yang berbasis di Denpasar, Bali. Kode Statistika menawarkan berbagai layanan yaitu Pembuatan Website, Mobile Apps, Karya Ilmiah, Analisis Data, dan Les Private Statistika.
         </div>
         <div class="mt-2 text-xl text-blueDeepDark">
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Kode Statistika menyediakan solusi teknologi terkini untuk memenuhi kebutuhan anda. Layanan Pembuatan Website dan Mobile Apps untuk memberikan pengalaman pengguna yang efektif dan menarik, sementara Karya Ilmiah yang ditawarkan mencakup penulisan skripsi, tesis dan jurnal ilmiah. Dalam layanan Analisis Data, kami mengumpulkan dan mengolah data dengan metode yang terbaik, serta memberikan interpretasi data untuk membantu anda dalam membuat keputusan bisnis ataupun pengolahan data karya ilmiah yang lebih baik. Selain itu, layanan les private statistika kami dapat membantu anda memahami konsep statistika dan menerapkannya dalam kehidupan sehari-hari ataupun dalam dunia kerja.
+        </div>
+        <div class="mt-2 text-xl text-blueDeepDark">
+          Kode Statistika dijalankan oleh tim yang terampil dan berpengalaman dalam bidang software development dan pengolahan data statistika. Kami berkomitmen untuk memberikan solusi terbaik dan efektif untuk anda.
         </div>
         <div class="flex mt-4">
           <div class="p-5 mr-4">

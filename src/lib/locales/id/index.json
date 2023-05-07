@@ -29,27 +29,27 @@
         "menu":[
             {
                 "title": "Olah Data Statistika",
-                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "desc": "Tim kami siap membantu Anda dalam mengumpulkan, mengolah, dan menganalisis data dengan menggunakan metode a,b,c,d. Kami melakukan pengolahan data dengan menggunakan aplikasi SPSS, EVIEWS",
                 "icon": "mdi:graph-box-plus-outline"
             },
             {
                 "title": "Les Private Statistika",
-                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "desc": "Layanan kami dirancang untuk membantu anda dalam memahami konsep statistika dan menerapkannya dalam kehidupan sehari-hari ataupun dalam dunia kerja.",
                 "icon": "material-symbols:menu-book-outline"
             },
             {
                 "title": "Penulisan Karya Ilmiah",
-                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "desc": "Layanan kami dapat membantu anda dalam penulisan skripsi, tesis dan jurnal ilmiah.",
                 "icon": "ph:pen-bold"
             },
             {
                 "title": "Pembuatan Website",
-                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "desc": "Tim pengembang website kami memiliki keahlian dan pengalaman dalam mengembangkan website yang menarik, responsif, dan sesuai dengan kebutuhan anda. Kami dapat membantu anda dengan menggunakan Framework Laravel & ReactJS.",
                 "icon": "fluent-mdl2:website"
             },
             {
                 "title": "Pembuatan Mobile Apps",
-                "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+                "desc": "Tim pengembang mobile apps kami memiliki keahlian dan pengalaman dalam mengembangkan mobile apps yang menarik, mudah digunakan, dan sesuai dengan kebutuhan anda. Kami dapat membantu anda dengan menggunakan Kotlin & React Native.",
                 "icon": "carbon:application-mobile"
             }
         ]
