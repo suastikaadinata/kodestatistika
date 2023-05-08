@@ -43,7 +43,7 @@
     <div class="p-2 flex-1 flex">
         <img src={logo} height="40" width="40" alt="Logo Kode Statistika" />
         <div class="text-2xl font-bold text-primaryDark ml-2 self-center">
-          KodeStatistika
+          Kode Statistika
         </div>
     </div>
     <div class="hidden xl:flex">
