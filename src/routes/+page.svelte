@@ -39,7 +39,7 @@
 
 <div class="relative ">
   <Navbar />
-  <div id="home" class="w-full py-10 flex flex-col xl:flex-row justify-center">
+  <div id="home" class="w-full flex flex-col xl:flex-row justify-center">
     <div class="flex-1 self-center p-10">
       <div class="flex-1 p-10 self-center xl:hidden">
         <img src={mainIllust} alt={"Main Illustration"} />
@@ -89,7 +89,7 @@
         <div class="flex mt-4">
           <div class="p-5 mr-4">
             <div class="text-center text-3xl font-bold text-greenSoftDark">
-              15+
+              30+
             </div>
             <div class="mt-2 text-xl font-semibold text-blueDeepDark">
               Project Selesai

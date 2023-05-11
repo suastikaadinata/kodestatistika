@@ -29,17 +29,17 @@
         "menu":[
             {
                 "title": "Olah Data Statistika",
-                "desc": "Tim kami siap membantu Anda dalam mengumpulkan, mengolah, dan menganalisis data dengan menggunakan metode a,b,c,d. Kami melakukan pengolahan data dengan menggunakan aplikasi SPSS, EVIEWS",
+                "desc": "Tim kami siap membantu Anda dalam inputing, mengolah, dan menganalisis data dengan menggunakan metode Regresi, Uji T, Pengujian Asumsi Klasik, Anova, Ancova, Manova, dll. Kami melakukan pengolahan data dengan menggunakan aplikasi SPSS, EVIEWS, Genstat, Gretl, Minitab, Excel, dll",
                 "icon": "mdi:graph-box-plus-outline"
             },
             {
                 "title": "Les Private Statistika",
-                "desc": "Layanan kami dirancang untuk membantu anda dalam memahami konsep statistika dan menerapkannya dalam kehidupan sehari-hari ataupun dalam dunia kerja.",
+                "desc": "Kami siap membantu mahasiswa dan non mahasiswa yang mengalami kesulitan dalam memahami konsep dan mengaplikasikan aplikasi statistika melalui les privat offline amupun online.",
                 "icon": "material-symbols:menu-book-outline"
             },
             {
                 "title": "Penulisan Karya Ilmiah",
-                "desc": "Layanan kami dapat membantu anda dalam penulisan skripsi, tesis dan jurnal ilmiah.",
+                "desc": "Layanan ini dapat membantu anda dalam penulisan skripsi, tesis, jurnal dan karya ilmiah lainnya.pada layanan ini juga menyediakan pembuatan dan edit Powerpoint (by request)",
                 "icon": "ph:pen-bold"
             },
             {
