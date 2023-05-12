@@ -3,7 +3,9 @@
     import HeaderButton from "$components/HeaderButton.svelte";
     import { fly } from 'svelte/transition';
     import logo from "$assets/logo_kode_statistika.png";
-    import { t } from '$locales';
+    import idnFlag from "$assets/idn_flag.png";
+    import engFlag from "$assets/english_flag.png";
+    import { t, locale } from '$locales';
     import Icon from '@iconify/svelte';
 
     let height = 0;
@@ -26,6 +28,16 @@
         });
     });
 
+    function changeToIDN() {
+        locale.set('id');
+        showMobile = false;
+    }
+
+    function changeToEng(){
+        locale.set('en');
+        showMobile = false;
+    }
+
     function scrollTo(id: string) {
         showMobile = false;
         console.log("status show mobile", showMobile);
@@ -43,7 +55,7 @@
     <div class="p-2 flex-1 flex">
         <img src={logo} height="40" width="40" alt="Logo Kode Statistika" />
         <div class="text-2xl font-bold text-primaryDark ml-2 self-center">
-          Kode Statistika
+          {$t('home.appname')}
         </div>
     </div>
     <div class="hidden xl:flex">
@@ -54,6 +66,12 @@
                 {$t(menus.title)}
             </div>
         {/each }
+        <div class="ml-6 mr-2 cursor-pointer items-center self-center border border-blueDeepDark" on:click={changeToIDN}>
+            <img src={idnFlag} height="30" width="30" alt="IDN Flag" />
+        </div>
+        <div class="mr-6 cursor-pointer items-center self-center border border-blueDeepDark" on:click={changeToEng}>
+            <img src={engFlag} height="30" width="30" alt="ENG Flag" />
+        </div>
     </div>
     {#if showMobile}
         <div transition:fly={{ y: -100, duration: 200 }}
@@ -65,6 +83,14 @@
                     {$t(menus.title)}
                 </div>
             {/each }
+            <div class="flex pt-2">
+                <div class="ml-2 mr-4 cursor-pointer items-center self-center border border-blueDeepDark" on:click={changeToIDN}>
+                    <img src={idnFlag} height="30" width="30" alt="IDN Flag" />
+                </div>
+                <div class="cursor-pointer items-center self-center border border-blueDeepDark" on:click={changeToEng}>
+                    <img src={engFlag} height="30" width="30" alt="ENG Flag" />
+                </div>
+            </div>
         </div>
     {/if}
     <div class="xl:hidden self-center mr-4" on:click={() => (showMobile = !showMobile)}>

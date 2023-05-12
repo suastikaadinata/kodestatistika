@@ -16,7 +16,7 @@ const config: Config = {
     {
       locale: 'en',
       key: 'home',
-      loader: async () => (await import('./id/index.json')).default,
+      loader: async () => (await import('./en/index.json')).default,
     }
   ],
 };

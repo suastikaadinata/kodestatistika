@@ -1,0 +1,97 @@
+{
+    "appname": "Kode Statistika",
+    "top": {
+        "menu": [
+            { 
+                "title": "Home",
+                "link": "home"
+            },
+            { 
+                "title": "About Us",
+                "link": "about"
+            },
+            { 
+                "title": "Services",
+                "link": "services"
+            },
+            { 
+                "title": "FAQ",
+                "link": "faq"
+            },
+            { 
+                "title": "Contact Us",
+                "link": "contact"
+            }
+        ]
+    },
+    "home": {
+        "title": "Service of App Development and Data Analysis",
+        "desc": "Also provide services for writing scientific papers and private tutoring for those of you who want to pursue Statistics as well.",
+        "start_consultation": "Start Consultation",
+        "see_services": "Our Services"
+    },
+    "aboutus": {
+        "title": "About Us",
+        "first_desc": "Kode Statistika is Software & Statistic House which take place in Denpasar, Bali. Kode Statistika provide various service like Web Development, Apps Development, Scientific Paper, Data Analysis, and Statistics Private Lesson.",
+        "second_desc": "Kode Statistika run by great team and have a lot experience in their field. We're committed to provide the best service for our you.",
+        "project_finished": "Project Finished",
+        "service_offered": "Service Offered"
+    },
+    "services": {
+        "our_services": "Our Services",
+        "title": "Services",
+        "desc": "Services description",
+        "menu":[
+            {
+                "title": "Data Analysis",
+                "desc": "Our team is ready to help you in inputing and analysis data using Regression, T-Test, Classical Assumption Test, Anova, Ancova, Manova, etc. We do data analysis using SPSS, EVIEWS, Stata, Genstat, Gretl, Minitab, Excel, etc.",
+                "icon": "mdi:graph-box-plus-outline"
+            },
+            {
+                "title": "Statistics Private Lesson",
+                "desc": "We are ready to help students and non-students who have difficulty in understanding the concept and applying statistical applications through offline and online private lessons.",
+                "icon": "material-symbols:menu-book-outline"
+            },
+            {
+                "title": "Scientific Paper Writing",
+                "desc": "Our team is ready to help you in writing scientific papers, both for the final project, thesis, dissertation, and journal. In this services we are provide service for creating and editing Power Point (by request).",
+                "icon": "ph:pen-bold"
+            },
+            {
+                "title": "Website Development",
+                "desc": "Our team have skills and experience in developing attractive, responsive, and according to your needs. We can help you using Laravel, ReactJS, Svelte Kit.",
+                "icon": "fluent-mdl2:website"
+            },
+            {
+                "title": "Mobile Apps Development",
+                "desc": "Our team have skills and experience in developing attractive, easy to use, and according to your needs. We can help you using Kotlin & React Native.",
+                "icon": "carbon:application-mobile"
+            }
+        ]
+    },
+    "faq": {
+        "title": "FaQ",
+        "data": [
+            {
+                "question": "How much cost for every service?",
+                "answer": "Our price is very flexible and depends on the complexity of the project."
+            },
+            {
+                "question": "How to order?",
+                "answer": "You just need to contact us through the contact provided and our team will provide you with the best solution!"
+            }
+        ]
+    },
+    "contact": {
+        "get_in_touch": "Get in Touch",
+        "get_in_touch_desc": "Let's talk about your project, we will help you to make it happen.",
+        "our_location": "Our Location",
+        "our_location_value": "Denpasar, Bali, Indonesia",
+        "follow_us_at": "Follow Us At",
+        "ig_id": "@kode_statistika",
+        "whatsapp_now": "Whatsapp Now",
+        "whatsapp_no": "085737354721",
+        "email_us_anytime": "Email Us Anytime",
+        "email_id": "kodestatistika@gmail.com"
+    }
+}

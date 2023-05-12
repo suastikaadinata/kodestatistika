@@ -1,4 +1,5 @@
 {
+    "appname": "Kode Statistika",
     "top": {
         "menu": [
             { 
@@ -23,7 +24,21 @@
             }
         ]
     },
+    "home": {
+        "title": "Jasa Pembuatan Aplikasi dan Olah Statistika",
+        "desc": "Melayani juga pembuatan Karya Ilmiah dan Les Private bagi kamu yang ingin lebih menekuni Ilmu Statistika.",
+        "start_consultation": "Mulai Konsultasi",
+        "see_services": "Lihat Layanan"
+    },
+    "aboutus": {
+        "title": "Tentang Kami",
+        "first_desc": "Kode Statistika adalah sebuah Software & Statistic House yang berbasis di Denpasar, Bali. Kode Statistika menawarkan berbagai layanan yaitu Pembuatan Website, Mobile Apps, Karya Ilmiah, Analisis Data, dan Les Private Statistika.",
+        "second_desc": "Kode Statistika dijalankan oleh tim yang terampil dan berpengalaman dalam bidang software development dan pengolahan data statistika. Kami berkomitmen untuk memberikan solusi terbaik dan efektif untuk anda.",
+        "project_finished": "Projek Selesai",
+        "service_offered": "Jenis Layanan"
+    },
     "services": {
+        "our_services": "Layanan Kami",
         "title": "Services",
         "desc": "Services description",
         "menu":[
@@ -39,7 +54,7 @@
             },
             {
                 "title": "Penulisan Karya Ilmiah",
-                "desc": "Layanan ini dapat membantu anda dalam penulisan skripsi, tesis, jurnal dan karya ilmiah lainnya.pada layanan ini juga menyediakan pembuatan dan edit Powerpoint (by request)",
+                "desc": "Layanan ini dapat membantu anda dalam penulisan skripsi, tesis, jurnal dan karya ilmiah lainnya. Pada layanan ini juga menyediakan pembuatan dan edit Powerpoint (by request)",
                 "icon": "ph:pen-bold"
             },
             {
@@ -53,5 +68,30 @@
                 "icon": "carbon:application-mobile"
             }
         ]
+    },
+    "faq": {
+        "title": "FaQ",
+        "data": [
+            {
+                "question": "Berapa harga dari setiap service?",
+                "answer": "Harga dari service yang kami tawarkan sangat bervariasi tergantung tingkat kesulitan dan lama pengerjaan dari sebuah projek"
+            },
+            {
+                "question": "Bagaimana cara pemesanan?",
+                "answer": "Anda hanya perlu menghubungi kami melalui kontak yang telah disediakan dan tim kami akan memberikan anda solusi terbaik!"
+            }
+        ]
+    },
+    "contact": {
+        "get_in_touch": "Hubungi Kami",
+        "get_in_touch_desc": "Ayo konsultasikan kebutuhanmu dengan kami.",
+        "our_location": "Berbasis di",
+        "our_location_value": "Denpasar, Bali, Indonesia",
+        "follow_us_at": "Ikuti Kami di",
+        "ig_id": "@kode_statistika",
+        "whatsapp_now": "Hubungi Kami Sekarang",
+        "whatsapp_no": "085737354721",
+        "email_us_anytime": "Email Kami Kapanpun",
+        "email_id": "kodestatistika@gmail.com"
     }
 }

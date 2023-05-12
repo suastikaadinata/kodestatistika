@@ -20,6 +20,11 @@
     desc: `home.services.menu.${i}.desc`
   }));
 
+  const faqs = [...new Array(2)].map((e, i) => ({
+    answer: `home.faq.data.${i}.answer`,
+    question: `home.faq.data.${i}.question`,
+  }));
+
   function scrollTo(id: string) {
     const element = document.getElementById(id);
     const pos = element?.offsetTop || 0;
@@ -81,25 +86,25 @@
         <img src={mainIllust} alt={"Main Illustration"} />
       </div>
       <div class="self-end">
-        <div class="text-5xl xl:text-7xl font-bold text-primaryDark">Kode Statistika</div>
+        <div class="text-5xl xl:text-7xl font-bold text-primaryDark">{$t('home.appname')}</div>
         <div class="font-semibold text-xl text-accent">
-          Jasa Pembuatan Aplikasi dan Olah Statistika
+          {$t('home.home.title')}
         </div>
         <p class="text-xl text-blueDeepDark mt-4">
-          Melayani juga pembuatan Karya Ilmiah dan Les Private bagi kamu yang ingin lebih menekuni Ilmu Statistika.
+          {$t('home.home.desc')}
         </p>
         <div class="flex flex-col xl:flex-row mt-6">
           <div
             on:click={() => scrollTo("contact")}
             class="rounded-2xl mt-4 cursor-pointer bg-primaryDark py-2 px-6 mr-4 text-center text-white font-bold text-xl"
           >
-            Mulai Konsultasi
+            {$t('home.home.start_consultation')}
         </div>
           <div
             on:click={() => scrollTo("services")}
             class="text-accent w-full xl:w-fit mt-4 cursor-pointer font-bold text-xl px-4 leading-10 border-b-4 border-accent self-center text-center"
           >
-            Lihat Services 
+            {$t('home.home.see_services')}
       </div>
         </div>
       </div>
@@ -114,13 +119,13 @@
         <img src={aboutIllust} alt={"Tentang Kami"} />
       </div>
       <div class="flex-1 flex flex-col px-5 xl:px-10 pt-10">
-        <div class="text-xl font-semibold text-blueDeepDark">Tentang Kami</div>
-        <div class="text-3xl font-bold text-greenSoftDark">Kode Statistika</div>
+        <div class="text-xl font-semibold text-blueDeepDark">{$t('home.aboutus.title')}</div>
+        <div class="text-3xl font-bold text-greenSoftDark">{$t('home.appname')}</div>
         <div class="mt-4 text-xl text-blueDeepDark">
-          Kode Statistika adalah sebuah Software & Statistic House yang berbasis di Denpasar, Bali. Kode Statistika menawarkan berbagai layanan yaitu Pembuatan Website, Mobile Apps, Karya Ilmiah, Analisis Data, dan Les Private Statistika.
+          {$t('home.aboutus.first_desc')}
         </div>
         <div class="mt-2 text-xl text-blueDeepDark">
-          Kode Statistika dijalankan oleh tim yang terampil dan berpengalaman dalam bidang software development dan pengolahan data statistika. Kami berkomitmen untuk memberikan solusi terbaik dan efektif untuk anda.
+          {$t('home.aboutus.second_desc')}
         </div>
         <div class="flex mt-4"  use:viewport on:enter={onEnterAbout}>
           <div class="p-5 mr-4">
@@ -133,7 +138,7 @@
               </div>
             </div>
             <div class="mt-2 text-center text-xl font-semibold text-blueDeepDark">
-              Project Selesai
+              {$t('home.aboutus.project_finished')}
             </div>
           </div>
           <div class="p-5">
@@ -141,7 +146,7 @@
               5
             </div>
             <div class="mt-2 text-center text-xl font-semibold text-blueDeepDark">
-              Jenis Layanan
+              {$t('home.aboutus.service_offered')}
             </div>
           </div>
         </div>
@@ -154,7 +159,7 @@
   > 
   <div class="w-full flex justify-center" use:viewport on:enter={onEnterService}> 
     <div class="text-4xl text-center font-bold text-accent text-accent mb-4 border-b-4 border-accent mx-5 px-4 py-4">
-      Layanan Kami
+      {$t('home.services.our_services')}
     </div>
   </div>
   {#if enterService}
@@ -167,21 +172,22 @@
   </div>
   <div id="faq" class="mr-2 ml-2 pt-20" use:viewport on:enter={onEnterFAQ}>
     <div class="w-full flex justify-center mb-10">
-      <div class="text-4xl font-bold mb-4 text-blueDeepDark border-b-4 border-b-blueDeepDark px-4 py-4">FaQ</div>
+      <div class="text-4xl font-bold mb-4 text-blueDeepDark border-b-4 border-b-blueDeepDark px-4 py-4">{$t('home.faq.title')}</div>
     </div>
     {#if enterFAQ }
     <div class="flex flex-col">
-      <CollapsibleContainer question="Berapa harga dari setiap service?" answer="Harga dari service yang kami tawarkan sangat bervariasi tergantung tingkat kesulitan dan lama pengerjaan dari sebuah projek"/>
-      <CollapsibleContainer question="Bagaimana cara pemesanan?" answer="Anda hanya perlu menghubungi kami melalui kontak yang telah disediakan dan tim kami akan memberikan anda solusi terbaik!"/>
+      {#each faqs as faq}
+        <CollapsibleContainer question={$t(faq.question)} answer={$t(faq.answer)}/>
+      {/each}
     </div>
     {/if}
   </div>
   <div id="contact" class="mt-10 bg-greenSoftDark">
     <div class="w-full p-5">
       <div class="w-full flex flex-col">
-        <div class="text-4xl font-bold text-white self-center">Get In Touch</div>
+        <div class="text-4xl font-bold text-white self-center">{$t('home.contact.get_in_touch')}</div>
         <div class="text-xl font-semibold text-white mt-2 self-center text-center">
-          Ayo konsultasikan kebutuhanmu dengan kami.
+          {$t('home.contact.get_in_touch_desc')}
         </div>
       </div>
       <div class="w-full xl:mt-10 xl:flex xl:px-20">
@@ -189,8 +195,8 @@
           <div class="flex-1 flex xl:self-center">
             <Icon icon={'material-symbols:location-on-outline'} class="text-white" height={50} />
             <div class="flex-1 ml-2 self-center">
-              <div class="text-md text-white self-center">Berbasis di</div>
-              <div class="text-lg font-semibold text-white self-center">Denpasar, Bali, Indonesia</div>
+              <div class="text-md text-white self-center">{$t('home.contact.our_location')}</div>
+              <div class="text-lg font-semibold text-white self-center">{$t('home.contact.our_location_value')}</div>
             </div>
           </div>
         </div>
@@ -198,8 +204,8 @@
           <div class="flex-1 flex xl:self-center">
             <Icon icon={'mdi:instagram'} class="text-white" height={50} />
             <div class="flex-1 ml-2 self-center">
-              <div class="text-md text-white self-center">Follow kami di</div>
-              <div class="text-lg font-semibold text-white self-center">@kode_statistika</div>
+              <div class="text-md text-white self-center">{$t('home.contact.follow_us_at')}</div>
+              <div class="text-lg font-semibold text-white self-center">{$t('home.contact.ig_id')}</div>
             </div>
           </div>
         </div>
@@ -207,8 +213,8 @@
           <div class="flex-1 flex xl:self-center">
             <Icon icon={'ic:baseline-whatsapp'} class="text-white" height={50} />
             <div class="flex-1 ml-2 self-center">
-              <div class="text-md text-white self-center">WhatsApp kami sekarang</div>
-              <div class="text-lg font-semibold text-white self-center">085737354721</div>
+              <div class="text-md text-white self-center">{$t('home.contact.whatsapp_now')}</div>
+              <div class="text-lg font-semibold text-white self-center">{$t('home.contact.whatsapp_no')}</div>
             </div>
           </div>
         </div>
@@ -216,8 +222,8 @@
           <div class="flex-1 flex xl:self-center">
             <Icon icon={'ic:outline-email'} class="text-white" height={50} />
             <div class="flex-1 ml-2 self-center">
-              <div class="text-md text-white self-center">Email kami kapanpun</div>
-              <div class="text-lg font-semibold text-white self-center">kodestatistika@gmail.com</div>
+              <div class="text-md text-white self-center">{$t('home.contact.email_us_anytime')}</div>
+              <div class="text-lg font-semibold text-white self-center">{$t('home.contact.email_id')}</div>
             </div>
           </div>
         </div>
