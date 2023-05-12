@@ -29,12 +29,12 @@
         "menu":[
             {
                 "title": "Olah Data Statistika",
-                "desc": "Tim kami siap membantu Anda dalam inputing, mengolah, dan menganalisis data dengan menggunakan metode Regresi, Uji T, Pengujian Asumsi Klasik, Anova, Ancova, Manova, dll. Kami melakukan pengolahan data dengan menggunakan aplikasi SPSS, EVIEWS, Genstat, Gretl, Minitab, Excel, dll",
+                "desc": "Tim kami siap membantu Anda dalam inputing, mengolah, dan menganalisis data dengan menggunakan metode Regresi, Uji T, Pengujian Asumsi Klasik, Stata, Anova, Ancova, Manova, dll. Kami melakukan pengolahan data dengan menggunakan aplikasi SPSS, EVIEWS, Genstat, Gretl, Minitab, Excel, dll",
                 "icon": "mdi:graph-box-plus-outline"
             },
             {
                 "title": "Les Private Statistika",
-                "desc": "Kami siap membantu mahasiswa dan non mahasiswa yang mengalami kesulitan dalam memahami konsep dan mengaplikasikan aplikasi statistika melalui les privat offline amupun online.",
+                "desc": "Kami siap membantu mahasiswa dan non mahasiswa yang mengalami kesulitan dalam memahami konsep dan mengaplikasikan aplikasi statistika melalui les privat offline maupun online.",
                 "icon": "material-symbols:menu-book-outline"
             },
             {

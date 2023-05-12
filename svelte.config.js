@@ -16,6 +16,7 @@ const config = {
 			$components: 'src/lib/components',
 			$assets: 'src/lib/assets',
 			$locales: 'src/lib/locales',
+			$lib: 'src/lib',
 		}
 	}
 };

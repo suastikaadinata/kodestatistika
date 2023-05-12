@@ -8,6 +8,11 @@
   import ServiceView from "$components/ServiceView.svelte";
   import CollapsibleContainer from "$components/CollapsibleContainer.svelte";
   import { t } from "$locales"
+  import viewport from '$lib/useViewport';;
+
+  let enterAbout = false
+  let enterService = false
+  let enterFAQ = false
 
   const services = [...new Array(5)].map((e, i) => ({
     title: `home.services.menu.${i}.title`,
@@ -22,6 +27,37 @@
       top: pos,
       behavior: "smooth",
     });
+  }
+
+  function incEltNbr(id: string) {
+    let elt = document.getElementById(id);
+    let endNbr = Number(document.getElementById(id).innerHTML);
+    incNbrRec(0, endNbr, elt);
+  }
+
+  function incNbrRec(i: number, endNbr: number, elt: any) {
+    if (i <= endNbr) {
+      elt.innerHTML = i;
+      setTimeout(function() {
+        incNbrRec(i + 1, endNbr, elt);
+      }, 100);
+    }
+  }
+
+  function onEnterAbout(){
+    if(!enterAbout){
+      incEltNbr("project-amount");
+      incEltNbr("service-amount");
+      enterAbout = true
+    }
+  }
+
+  function onEnterService(){
+    enterService = true;
+  }
+
+  function onEnterFAQ(){
+    enterFAQ = true;
   }
 
   function goToIG(){
@@ -39,13 +75,13 @@
 
 <div class="relative ">
   <Navbar />
-  <div id="home" class="w-full flex flex-col xl:flex-row justify-center">
-    <div class="flex-1 self-center p-10">
-      <div class="flex-1 p-10 self-center xl:hidden">
+  <div id="home" class="w-full xl:py-10 flex flex-col xl:flex-row justify-center">
+    <div class="flex-1 self-center p-5 xl:p-10">
+      <div class="flex-1 px-10 mt-8 mb-4 self-center xl:hidden">
         <img src={mainIllust} alt={"Main Illustration"} />
       </div>
       <div class="self-end">
-        <div class="text-7xl font-bold text-primaryDark">Kode Statistika</div>
+        <div class="text-5xl xl:text-7xl font-bold text-primaryDark">Kode Statistika</div>
         <div class="font-semibold text-xl text-accent">
           Jasa Pembuatan Aplikasi dan Olah Statistika
         </div>
@@ -77,7 +113,7 @@
       <div class="flex-1 p-10 self-center flex justify-end">
         <img src={aboutIllust} alt={"Tentang Kami"} />
       </div>
-      <div class="flex-1 flex flex-col p-10">
+      <div class="flex-1 flex flex-col px-5 xl:px-10 pt-10">
         <div class="text-xl font-semibold text-blueDeepDark">Tentang Kami</div>
         <div class="text-3xl font-bold text-greenSoftDark">Kode Statistika</div>
         <div class="mt-4 text-xl text-blueDeepDark">
@@ -86,20 +122,25 @@
         <div class="mt-2 text-xl text-blueDeepDark">
           Kode Statistika dijalankan oleh tim yang terampil dan berpengalaman dalam bidang software development dan pengolahan data statistika. Kami berkomitmen untuk memberikan solusi terbaik dan efektif untuk anda.
         </div>
-        <div class="flex mt-4">
+        <div class="flex mt-4"  use:viewport on:enter={onEnterAbout}>
           <div class="p-5 mr-4">
-            <div class="text-center text-3xl font-bold text-greenSoftDark">
-              30+
+            <div class="flex justify-center">
+              <div class="text-3xl font-bold text-greenSoftDark" id="project-amount">
+                30
+              </div>
+              <div class="text-3xl font-bold text-greenSoftDark">
+                +
+              </div>
             </div>
-            <div class="mt-2 text-xl font-semibold text-blueDeepDark">
+            <div class="mt-2 text-center text-xl font-semibold text-blueDeepDark">
               Project Selesai
             </div>
           </div>
           <div class="p-5">
-            <div class="text-center text-3xl font-bold text-greenSoftDark">
+            <div class="text-center text-3xl font-bold text-greenSoftDark" id="service-amount">
               5
             </div>
-            <div class="mt-2 text-xl font-semibold text-blueDeepDark">
+            <div class="mt-2 text-center text-xl font-semibold text-blueDeepDark">
               Jenis Layanan
             </div>
           </div>
@@ -111,31 +152,35 @@
     id="services"
     class="w-full flex pt-20 flex-col items-center"
   > 
-  <div class="w-full flex justify-center">
-    <div class="text-5xl font-bold text-accent text-accent mb-4 border-b-4 border-accent px-4 py-4">
+  <div class="w-full flex justify-center" use:viewport on:enter={onEnterService}> 
+    <div class="text-4xl text-center font-bold text-accent text-accent mb-4 border-b-4 border-accent mx-5 px-4 py-4">
       Layanan Kami
     </div>
   </div>
+  {#if enterService}
   <div class="max-w-screen-2xl xl:flex xl:flex-wrap xl:justify-center">
-    {#each services as service}
-      <ServiceView icon={$t(service.icon)} title={$t(service.title)} description={$t(service.desc)}/>
-    {/each}
+      {#each services as service}
+        <ServiceView icon={$t(service.icon)} title={$t(service.title)} description={$t(service.desc)}/>
+      {/each}
   </div>
+  {/if}
   </div>
-  <div id="faq" class="mr-2 ml-2 pt-20">
+  <div id="faq" class="mr-2 ml-2 pt-20" use:viewport on:enter={onEnterFAQ}>
     <div class="w-full flex justify-center mb-10">
-      <div class="text-5xl font-bold mb-4 text-blueDeepDark border-b-4 border-b-blueDeepDark px-4 py-4">FaQ</div>
+      <div class="text-4xl font-bold mb-4 text-blueDeepDark border-b-4 border-b-blueDeepDark px-4 py-4">FaQ</div>
     </div>
+    {#if enterFAQ }
     <div class="flex flex-col">
       <CollapsibleContainer question="Berapa harga dari setiap service?" answer="Harga dari service yang kami tawarkan sangat bervariasi tergantung tingkat kesulitan dan lama pengerjaan dari sebuah projek"/>
       <CollapsibleContainer question="Bagaimana cara pemesanan?" answer="Anda hanya perlu menghubungi kami melalui kontak yang telah disediakan dan tim kami akan memberikan anda solusi terbaik!"/>
     </div>
+    {/if}
   </div>
   <div id="contact" class="mt-10 bg-greenSoftDark">
     <div class="w-full p-5">
       <div class="w-full flex flex-col">
-        <div class="text-5xl font-bold text-white self-center">Get In Touch</div>
-        <div class="text-2xl font-semibold text-white mt-2 self-center text-center">
+        <div class="text-4xl font-bold text-white self-center">Get In Touch</div>
+        <div class="text-xl font-semibold text-white mt-2 self-center text-center">
           Ayo konsultasikan kebutuhanmu dengan kami.
         </div>
       </div>

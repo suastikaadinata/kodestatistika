@@ -67,7 +67,7 @@
             {/each }
         </div>
     {/if}
-    <div class="xl:hidden self-center mr-1" on:click={() => (showMobile = !showMobile)}>
+    <div class="xl:hidden self-center mr-4" on:click={() => (showMobile = !showMobile)}>
         <Icon icon="material-symbols:menu-rounded" height={30}/>
     </div>
 </nav>
